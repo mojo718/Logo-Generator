@@ -1,4 +1,3 @@
-const path = require('path');
 const inquirer = require('inquirer');
 const fs = require('fs');
 const Icon = require('./lib/icon');
@@ -50,10 +49,9 @@ async function generateLogo() {
 
     const svgContent = icon.generateSVG();
     const fileName = 'logo.svg';
-    const filePath = path.join(__dirname, 'results', fileName); // Results folder
 
-    fs.writeFileSync(filePath, svgContent);
-    console.log(`Logo saved as ${filePath}`);
+    fs.writeFileSync(fileName, svgContent);
+    console.log(`Logo saved as ${fileName}`);
 }
 
 generateLogo();
