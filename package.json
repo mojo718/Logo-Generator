@@ -2,17 +2,19 @@
   "name": "logo-generator",
   "version": "1.0.0",
   "description": "SVG Logo Generator",
-  "main": "logoGenerator.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "test"
+    "test": "index-test.js"
   },
   "author": "Ben M",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^8.2.4",
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
     "jest": "^29.7.0"
   }
 }
